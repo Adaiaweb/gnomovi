@@ -72,7 +72,7 @@ const no10 = ref('');
 const handleInput = (event, model) => {
   const value = event.target.value;
   if (model === 'no1') {
-    no1.value = value.toUpperCase();
+    no1.value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
   } else if (/^\d*$/.test(value)) {
     if (model === 'no2') no2.value = value;
     if (model === 'no3') no3.value = value;
