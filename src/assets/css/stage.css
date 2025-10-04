@@ -1,0 +1,333 @@
+.opacity:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    height: 100dvh;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+}
+.relative {
+    position: relative;
+}
+.z-1 {
+    z-index: 1;
+}
+.z-2 {
+    z-index: 2;
+}
+.slide-wrapper { 
+    width: 100%;
+    height: 100dvh; 
+}
+.scene { 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-size: cover; 
+    will-change: transform;
+    font-size: 1.25rem;  
+    background-position: -55vw center;   
+}
+.hidden {
+    overflow: hidden;
+}
+.font-size { 
+    font-size: 1.25rem;  
+}  
+@media only screen and (min-width: 667px) {
+    .scene {       
+        background-position: center center;
+    }
+}
+@media only screen and (min-width: 1280px) { 
+    .font-size { 
+        font-size: 1.75rem;
+    }
+} 
+@media only screen and (min-width: 1400px) { 
+    .font-size { 
+        font-size: 2rem; 
+    }
+} 
+@media only screen and (min-width: 1800px) { 
+    .font-size { 
+        font-size: 2.5rem; 
+    }
+} 
+@media only screen and (max-width: 400px) { 
+    .font-size--v1 { 
+        font-size: 1rem; 
+    } 
+}
+.flex-center {
+    align-items: center;
+    text-align: center;
+}
+.wrapper-v1 {
+    padding: 1rem;
+    width: 100%; 
+    z-index: 5;
+}
+@media only screen and (min-width: 470px) {
+    .wrapper-v1 { 
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 640px) {
+    .wrapper-v1 { 
+        width: 75%;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .wrapper-v1 {
+        padding: 2rem;
+        width: 55vw;
+    }
+}
+.wrapper-v2 { 
+    width: 100%; 
+    padding: 1rem;
+    text-align: center;
+}
+@media only screen and (min-width: 667px) {
+    .wrapper-v2 {
+        width: 74%; 
+        padding: 2rem;
+        text-align: center;
+    }
+} 
+.wrapper-v3 {
+    width: 100%;
+    padding: 1rem;
+}
+@media only screen and (min-width: 667px) {
+    .wrapper-v3 {
+        width: 54%;
+        padding: 2rem;
+    }
+}
+.wrapper-v4 {
+    width: 100%;
+    padding: 1rem; 
+}
+@media only screen and (min-width: 667px) {    
+    .wrapper-v4 {
+        width: 52%;
+        padding: 2rem; 
+    }
+} 
+.wrapper-v5 {
+    width: 100%;
+    padding: 2rem; 
+} 
+.btn {
+    background-color: transparent;
+    border: none; 
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 9898;
+} 
+.btn img {
+    width: 50px;
+}
+@media only screen and (min-width: 667px) {
+    .btn img {
+        width: auto;
+    }
+}
+.next-btn {
+    right: 0px;
+}
+.btn-submit {
+    background-color: #0e9707;
+    transition: all 0.5s ease-out;
+    color: white;
+    cursor: pointer;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 3px;
+    padding: 0.75rem 1rem;
+}
+.btn-submit:hover {
+    background-color: #c23080; 
+}
+
+.character-img { 
+    right: 0;
+    bottom: -60px;
+}
+@media only screen and (min-width: 680px) {
+    .character-img {
+        right: 30vw;
+        bottom: 50px; 
+    }
+
+    .btn-submit { 
+        font-size: 1.5rem; 
+    }
+}
+@media (orientation: portrait) {
+    .character-img { 
+        max-height: 520px;
+        height: 97vw;
+    }
+}
+@media (orientation: landscape) {
+    .character-img { 
+        max-height: 420px;
+        height: 67vw;
+    }
+}
+@media (orientation: landscape) and (max-width: 650px) {
+    .character-img { 
+        max-height: 390px;
+        height: 55vw;
+    }
+}
+@media (orientation: landscape) and (max-width: 1000px) {
+    .character-img { 
+        max-height: 320px;
+        height: 42vw;
+    }
+}
+@media (orientation: landscape) and (max-width: 725px) {
+    .character-img { 
+        max-height: 300px;
+        height: 38vw;
+    }
+}
+@media (orientation: portrait) and (max-width: 680px) {
+    .character-img { 
+        max-height: 400px;
+        height: 91vw;
+    }
+}
+.character-img--v2 {
+    right: 10px; 
+    bottom: -50px; 
+    z-index: -1;
+}
+.character-img--v3 {
+    right: 10px; 
+    bottom: -160px;   
+    max-height: 641px;
+    height: 48vw;
+}
+@media (max-width:620px) {
+    .character-img--v3 {
+        max-height: 641px;
+        height: 118vw;
+        bottom: -40px; 
+    }
+}
+@media (orientation: portrait) and (max-width: 1025px) {
+    .scene-8 {
+        background-position: 27% center;
+    }
+}
+@media (orientation: landscape) and (max-width:880px) {
+    .scene-8 {
+        background-position: center 81%;
+    }
+}
+.money {
+    width: 22%;
+}
+.money-position {
+    left: -25px;
+    z-index: 5;
+}
+.w-full	{
+   width: 100%; 
+}
+.max-w-110 {
+    max-width: 90px;
+}
+.bg-gradient-img {
+    background-image: url('../src/assets/image/gradient.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.money-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.max-w-100 {
+    max-width: 80px;
+    margin-top: 20px;
+}
+.mln-40 {
+    margin-left: -40px;
+}
+.door-char {
+    max-width: 380px; 
+    left: 10px;
+    bottom: 20px;
+}
+.braco {
+    right: -24vw;
+    bottom: 20px;
+    margin-right: 50%;
+}
+.maja-dzepu {
+    left: 20px;
+    bottom: 20px;
+}
+@media (orientation: landscape) and (max-width:880px) {
+    .braco {
+        right: -30vw;
+        bottom: 20px;
+        margin-right: 50%;
+    }
+}
+@media (max-width:880px) {
+    .braco {
+        right: 0vw;
+        margin-right: 0%;
+    }
+}
+
+@media (max-width:440px) {
+    .money-wrapper {
+        max-width: 300px; 
+    }
+}
+
+.table {
+    bottom: 50%;
+    right: 50%;
+    margin-right: -220px;
+    margin-bottom: -360px; 
+}
+.questions {
+    height: 100dvh;
+    width: 100%;
+}
+.questions-img {
+    background-image: url('../src/assets/image/papir.png');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 6%;
+    text-align: center;
+    color: black;
+}
+.questions-img--v1 {
+    left: 20%;
+    bottom: 4%; 
+}
+.questions-img--v2 {
+    left: 52%;
+    bottom: 2%;
+}
+.questions-img--v3 {
+    right: 4%;
+    bottom: 4%; 
+}
+.justify-end {
+    justify-self: end;
+}   
