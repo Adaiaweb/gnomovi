@@ -73,9 +73,10 @@ const handleInput = (event, model) => {
   const value = event.target.value;
   if (model === 'no1') {
     no1.value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+  } else if (model === 'no3') {
+    no3.value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
   } else if (/^\d*$/.test(value)) {
     if (model === 'no2') no2.value = value;
-    if (model === 'no3') no3.value = value;
     if (model === 'no4') no4.value = value;
     if (model === 'no5') no5.value = value;
     if (model === 'no6') no6.value = value;
