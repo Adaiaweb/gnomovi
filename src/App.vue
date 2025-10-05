@@ -173,7 +173,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div> 
 
         <div class="scene scene-8 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg7, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 43">
-            <div class="wrapper-v1 relative justify-end"><span class="text-ovelay">Hvala ti, sada ćeš mu moći pomoći! <br />Iako patuljak želi kući vratiti, jako je gladan, trbuščić mu već kruli. <br > 
+            <div class="wrapper-v1 relative justify-end"><span class="text-ovelay">Hvala ti, sada ćeš mu moći pomoći! <br />Iako se patuljak želi kući vratiti, jako je gladan, trbuščić mu već kruli. <br > 
                 Možeš li mu pomoći {{ no1 }} i reći što znači Food u gnomovom govoru? </span>
             <span>
                 <input type="text" name="no-2" v-model="no2" class="input-line font-size font-size--v1" @input="handleInput($event, 'no2')" />
@@ -193,7 +193,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>
 
         <div class="scene scene-9 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg8, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 42">
-            <div class="wrapper-v1 relative"><span class="text-ovelay">Čim su gnomovi shvatili da je naš patuljak gladuš pravi, odmah su se razveselili i pun stol hrane poslužili. Također su željeli znati koji mu je obrok sa stola najdraži.Je li to bila patka ili jabuka, možda komad pileta ili zrno grožđa? Patuljak opet traži pomoć tvoju, pa mu prevedi riječ pokoju. Koje ti je najdraže jelo?  </span>
+            <div class="wrapper-v1 relative"><span class="text-ovelay">Čim su gnomovi shvatili da je naš patuljak gladuš pravi, odmah su se razveselili i pun stol hrane poslužili. Također su željeli znati koji mu je obrok sa stola najdraži.<br />Je li to bila patka ili jabuka, možda komad pileta ili zrno grožđa? Patuljak opet traži pomoć tvoju, pa mu prevedi riječ pokoju. Koje ti je najdraže jelo?  </span>
                 <input type="text" name="no-3" v-model="no3" class="input-line font-size font-size--v1" @input="handleInput($event, 'no3')" />
             </div> 
             <button class="btn next-btn absolute" v-if="no3 !== ''"  @click="nextSlide">
