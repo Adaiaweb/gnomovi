@@ -173,7 +173,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div> 
 
         <div class="scene scene-8 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg7, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 43">
-            <div class="wrapper-v1 relative justify-end"><span class="text-ovelay">Hvala ti, sada ćeš mu moći pomoći kuči se vratiti. Iako patuljak želi kući vratiti, jako je gladan, trbuščić mu već kruli. <br > 
+            <div class="wrapper-v1 relative justify-end"><span class="text-ovelay">Hvala ti, sada ćeš mu moći pomoći! <br />Iako patuljak želi kući vratiti, jako je gladan, trbuščić mu već kruli. <br > 
                 Možeš li mu pomoći {{ no1 }} i reći što znači Food u gnomovom govoru? </span>
             <span>
                 <input type="text" name="no-2" v-model="no2" class="input-line font-size font-size--v1" @input="handleInput($event, 'no2')" />
