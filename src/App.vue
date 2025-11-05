@@ -101,7 +101,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>
 
         <div class="scene scene-2 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg1, backgroundSize: 'cover', backgroundPosition: '25% center' }" style="z-index: 49">
-            <div class="wrapper-v1 relative"><span class="text-ovelay">U zemlji stranoj za koju nitko nije čuo, jedan se patuljak izgubio. Iako je bio najmanji od prijatelja svih, nikad nije mislio da će za svoje nove prijatelje on biti div.</span>
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">U zemlji stranoj za koju nitko nije čuo, jedan se patuljak izgubio. Iako je bio najmanji od prijatelja svih, nikad nije mislio da će za svoje nove prijatelje on biti div.</span></div>
             </div>  
             <button class="btn next-btn absolute" @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
@@ -112,7 +112,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div> 
 
         <div class="scene scene-3 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg2, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 48">
-            <div class="wrapper-v1 relative justify-end"><span class="text-ovelay">Pošao je u šetnju i negdje krivo skrenuo. Ni sam nije znao kamo bi sljedeće krenuo. Kada je pomislio da se neće znati vratiti, primijetio je malo selo te se odlučio njegovim stanovnicima za pomoć obratiti.</span>
+            <div class="wrapper-v1 relative justify-end"><div class="blur"><span class="text-ovelay">Pošao je u šetnju i negdje krivo skrenuo. Ni sam nije znao kamo bi sljedeće krenuo. Kada je pomislio da se neće znati vratiti, primijetio je malo selo te se odlučio njegovim stanovnicima za pomoć obratiti.</span></div>
             </div>  
             <button class="btn next-btn absolute" @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
@@ -123,7 +123,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>  
 
         <div class="scene scene-4 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg3, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 47">
-            <div class="wrapper-v1 relative"><span class="text-ovelay">Kada je stigao u malo selo, pomoć je odmah zatražio, ali mu nitko nije odgovorio jer nitko nije znao što znači riječ - Hello.</span>
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">Kada je stigao u malo selo, pomoć je odmah zatražio, ali mu nitko nije odgovorio jer nitko nije znao što znači riječ - Hello.</span></div>
             </div>  
             <button class="btn next-btn absolute" @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
@@ -134,8 +134,8 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>    
 
         <div class="scene scene-5 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg4, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 46">
-            <div class="wrapper-v1 botton-text"><span class="text-ovelay">Naime, naš patuljak je hodao dalje nego što je mislio i predaleko zalutao. 
-            Još je i samo engleski pričao, a u selu gnomova engleski nitko nije znao. <br/>Kako će se moći kući vratiti, ako ne može s njima ni razgovarati? A već i trbuščić svoju hranu traži, ali riječ Food, gnomove još više razdraži.</span>
+            <div class="wrapper-v1 botton-text"><div class="blur"><span class="text-ovelay">Naime, naš patuljak je hodao dalje nego što je mislio i predaleko zalutao. 
+            Još je i samo engleski pričao, a u selu gnomova engleski nitko nije znao. <br/>Kako će se moći kući vratiti, ako ne može s njima ni razgovarati? A već i trbuščić svoju hranu traži, ali riječ Food, gnomove još više razdraži.</span></div>
             </div>  
             <button class="btn next-btn absolute" @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
@@ -146,7 +146,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>     
 
         <div class="scene scene-6 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg6, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 45">
-            <div class="wrapper-v2 relative justify-end"><span class="text-ovelay">Gnomovi su mislili da ih patuljak zeza, jer do sad nisu vidjeli tako velikog uljeza. Iako su znali da negdje žive divovi patuljci, nikada ih nisu susreli ili s njima razgovarali. Sada naš patuljak tvoju pomoć treba, jer ga svaki gnom već ljutito gleda.</span>
+            <div class="wrapper-v2 relative justify-end"><div class="blur"><span class="text-ovelay">Gnomovi su mislili da ih patuljak zeza, jer do sad nisu vidjeli tako velikog uljeza. Iako su znali da negdje žive divovi patuljci, nikada ih nisu susreli ili s njima razgovarali. Sada naš patuljak tvoju pomoć treba, jer ga svaki gnom već ljutito gleda.</span></div>
             </div>  
             <button class="btn next-btn absolute" @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
@@ -157,8 +157,8 @@ const { nextSlide, backSlide } = arrowSlides();
         </div> 
 
         <div class="scene scene-7 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg6a, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 44">
-            <div class="wrapper-v1 relative"><span class="text-ovelay">Pomozi našem patuljku kada treba prevoditi, i tako mu pomogni da se vrati kući. 
-                Ali patuljak želi znati "What is your name?", kako bi te mogao pozvati u pomoć!<br /></span>
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">Pomozi našem patuljku kada treba prevoditi, i tako mu pomogni da se vrati kući. 
+                Ali patuljak želi znati "What is your name?", kako bi te mogao pozvati u pomoć!<br /></span></div>
             <input type="text" name="no-1" v-model="no1" placeholder="Your name" class="input-line font-size" @input="handleInput($event, 'no1')" />
             </div>  
             <button class="btn next-btn absolute" v-if="no1 !== ''" @click="nextSlide">
@@ -170,8 +170,8 @@ const { nextSlide, backSlide } = arrowSlides();
         </div> 
 
         <div class="scene scene-8 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg7, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 43">
-            <div class="wrapper-v1 relative justify-end"><span class="text-ovelay">Hvala ti {{ no1 }}! Sada ćeš mu moći pomoći! <br />Iako se patuljak želi kući vratiti, jako je gladan, trbuščić mu već kruli. 
-                Možeš li mu pomoći {{ no1 }} i reći što znači Food u gnomovom govoru? <br > </span>
+            <div class="wrapper-v1 relative justify-end"><div class="blur"><span class="text-ovelay">Hvala ti {{ no1 }}! Sada ćeš mu moći pomoći! <br />Iako se patuljak želi kući vratiti, jako je gladan, trbuščić mu već kruli. 
+                Možeš li mu pomoći {{ no1 }} i reći što znači Food u gnomovom govoru? <br > </span></div>
             <span class="text-bg">
                 <input type="text" name="no-2" v-model="no2" placeholder="Prevedi riječ Food" class="input-line font-size font-size--v1" @input="handleInput($event, 'no2')" />
                 <span class="validation-width"> 
@@ -190,7 +190,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>
 
         <div class="scene scene-9 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg8, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 42">
-            <div class="wrapper-v1 relative"><span class="text-ovelay">Čim su gnomovi shvatili da je naš patuljak gladuš pravi, odmah su se razveselili i pun stol hrane poslužili. Također su željeli znati koji mu je obrok sa stola najdraži.<br />Je li to bila patka ili jabuka, možda komad pileta ili zrno grožđa? Patuljak opet traži pomoć tvoju, pa mu prevedi riječ pokoju. Koje ti je najdraže jelo?  <br/></span>
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">Čim su gnomovi shvatili da je naš patuljak gladuš pravi, odmah su se razveselili i pun stol hrane poslužili. Također su željeli znati koji mu je obrok sa stola najdraži.<br />Je li to bila patka ili jabuka, možda komad pileta ili zrno grožđa? Patuljak opet traži pomoć tvoju, pa mu prevedi riječ pokoju. Koje ti je najdraže jelo?  <br/></span></div>
                 <input type="text" name="no-3" v-model="no3" placeholder="Your favorite food?" class="input-line font-size font-size--v1 text-bg" @input="handleInput($event, 'no3')" />
             </div> 
             <button class="btn next-btn absolute" v-if="no3 !== ''"  @click="nextSlide">
@@ -203,7 +203,7 @@ const { nextSlide, backSlide } = arrowSlides();
 
         <div class="scene scene-10 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg9, backgroundSize: 'cover', backgroundPosition: '90% center' }" style="z-index: 41">
             <div class="wrapper-v1 relative">
-                <span class="text-ovelay">{{no3}} je i gnomovima hrana najdraža. Još ih zanima, kako se na engleskom kaže:<br /></span>
+                <div class="blur"><span class="text-ovelay">{{no3}} je i gnomovima hrana najdraža. Još ih zanima, kako se na engleskom kaže:<br /></span></div>
                 <span class="text-bg">
                     <input type="text" name="no-4" placeholder="Jabuka" v-model="no4" class="input-line font-size font-size--v1" @input="handleInput($event, 'no4')" />
                     <span class="validation-width"> 
@@ -249,7 +249,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>
 
         <div class="scene scene-11 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg10, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 40">
-            <div class="wrapper-v1 relative float-right"><span class="text-ovelay">Zahvaljujući tvojoj pomoći, patuljak više nema problema i nakon što je napunio svoj trbuščić, želi naći mjesto da malo zadrijema. Ispod drveta bolje ne, da mu jabuka na glavu ne padne. Možda da zamoli gnomove za najbolje mjesto za oči umorne. Ponovno treba pomoć tvoju za riječ Sleep na patuljčevu govoru.<br /></span>
+            <div class="wrapper-v1 relative float-right"><div class="blur"><span class="text-ovelay">Zahvaljujući tvojoj pomoći, patuljak više nema problema i nakon što je napunio svoj trbuščić, želi naći mjesto da malo zadrijema. Ispod drveta bolje ne, da mu jabuka na glavu ne padne. Možda da zamoli gnomove za najbolje mjesto za oči umorne. Ponovno treba pomoć tvoju za riječ Sleep na patuljčevu govoru.<br /></span></div>
                 <input type="text" name="no-8" v-model="no8" class="input-line font-size text-bg" placeholder="Sleep na hrvatskom?" @input="handleInput($event, 'no8')" />
                 <span class="validation-width"> 
                     <span v-if="no8 && no8 !== ''" :class="['validation', no8 === 'spavati' ? 'correct' : 'incorrect']">
@@ -266,7 +266,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>
 
         <div class="scene scene-12 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg11, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 39">
-            <div class="wrapper-v1 relative"><span class="text-ovelay">Gnomovi su se nasmijali i patuljka u najveću kuću uveli. Gnomovi su zapravo bili znatiželjna bića, pa žele da im patuljak još malo priča. Ali patuljak je previše umoran, već ga je uhvatio san.</span>
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">Gnomovi su se nasmijali i patuljka u najveću kuću uveli. Gnomovi su zapravo bili znatiželjna bića, pa žele da im patuljak još malo priča. Ali patuljak je previše umoran, već ga je uhvatio san.</span></div>
             </div> 
             <button class="btn next-btn absolute" @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
@@ -277,7 +277,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>
 
         <div class="scene scene-13 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg15, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 38">
-            <div class="wrapper-v1 relative"><span class="text-ovelay">Nakon što se odmorio, krenuti kući je naumio. Ali jedan gnom njegovu pomoć traži, krov mu negdje curi, a visoki patuljak može lako da istraži. Patuljak bi rado pomogao, ali nije razumio što mu je gnom govorio. <br />Možeš li mu pomoći i riječ krov prevesti?</span>
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">Nakon što se odmorio, krenuti kući je naumio. Ali jedan gnom njegovu pomoć traži, krov mu negdje curi, a visoki patuljak može lako da istraži. Patuljak bi rado pomogao, ali nije razumio što mu je gnom govorio. <br />Možeš li mu pomoći i riječ krov prevesti?</span></div>
                 <input type="text" name="no-9" v-model="no9" class="input-line font-size font-size--v1 text-bg" placeholder="Prevedi riječ krov" @input="handleInput($event, 'no9')" />
             </div> 
             <button class="btn next-btn absolute" v-if="no9?.toLowerCase() === 'roof'" @click="nextSlide">
@@ -289,7 +289,7 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>
 
         <div class="scene scene-14 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg16, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 37">
-            <div class="wrapper-v1 absolute"><span class="text-ovelay">Patuljak naš gnomu je pomoć pružio i brzo rupu na krovu pokrpao. Gnomovi su bili jako sretni i željeli su da ih naš patuljak ponovno posjeti. Kako bi znao opet navratiti, napravili su mu kartu pa će se sada moći i kući vratiti. Patuljak im se želio zahvaliti, pa riječ thank you prevedi.</span>
+            <div class="wrapper-v1 absolute"><div class="blur"><span class="text-ovelay">Patuljak naš gnomu je pomoć pružio i brzo rupu na krovu pokrpao. Gnomovi su bili jako sretni i željeli su da ih naš patuljak ponovno posjeti. Kako bi znao opet navratiti, napravili su mu kartu pa će se sada moći i kući vratiti. Patuljak im se želio zahvaliti, pa riječ thank you prevedi.</span></div>
                 <input type="text" name="no-10" v-model="no10" class="input-line font-size font-size--v1 text-bg" placeholder="Thank you na hrvatskom" @input="handleInput($event, 'no10')" />
             </div>        
             <div class="wrapper-v1 relative karta flex">  <img src="/src/assets/image/karta.png" class="mx-auto z-index-auto" /> </div>     
@@ -303,8 +303,9 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>
 
         <div class="scene scene-15 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg17, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 36">
-            <div class="wrapper-v1 relative"><span class="text-ovelay">Sad već i gnomovi malo engleski jezik znaju, pa će ga početi govoriti i u svome kraju. Patuljak je već put kući krenuo i jedva čekao priliku za iduću posjetu.
-            </span> 
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">Sad već i gnomovi malo engleski jezik znaju, pa će ga početi govoriti i u svome kraju. Patuljak je već put kući krenuo i jedva čekao priliku za iduću posjetu. <br/>
+            Drago mu je da je i tebe upoznao te će te ponovno pozvati kada će u novu pustolovinu krenuti. S tobom je svaka pustolovina lakša i veselija!
+            </span> </div>
             </div> 
             
             <button class="btn next-btn absolute" v-if="no8?.toLowerCase() === 'spavati'"  @click="nextSlide">

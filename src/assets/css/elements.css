@@ -32,10 +32,13 @@
 }
 .input-line {
     color: white;
+    backdrop-filter: blur(2px);    
+    text-shadow: 2px 1px 9px rgba(0, 0, 0, 1);
 }
 ::placeholder {
-    color: rgb(255, 255, 255); 
+    color: rgba(255, 255, 255, 0.8); 
     opacity: 1; /* Fully visible */
+    text-shadow: 2px 1px 9px rgba(0, 0, 0, 1);
   }
 @media (orientation: landscape) and (max-width: 1025px) {
     .bg-notebook {
@@ -217,15 +220,27 @@
     bottom: 8vh;
 }
 .text-ovelay {
-    background: rgb(0 0 0 / 40%);
+    text-shadow: 2px 1px 9px rgba(0, 0, 0, 1);
     color: white;
     padding: 3px 5px;
     display: inline;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+    position: relative;
+    z-index: 1;
+}  
+.blur {
+    position: relative;
+    margin-bottom: 20px;
 }
-.text-bg {
-    background: rgb(0 0 0 / 40%);
+.blur::before {
+    content: "";
+    position: absolute;
+    inset: 0; 
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px); 
+    z-index: -1;
+    top: 0;
 }
 .mx-auto {
     margin: 0 auto;
