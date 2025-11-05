@@ -24,6 +24,7 @@ const imagePaths = [
   new URL('./assets/image/bg-15.jpg', import.meta.url).href,
   new URL('./assets/image/bg-16.jpg', import.meta.url).href,
   new URL('./assets/image/bg-17.jpg', import.meta.url).href,
+  new URL('./assets/image/bg-18.jpg', import.meta.url).href,
   new URL('./assets/image/karta.png', import.meta.url).href, 
 ];
  
@@ -52,6 +53,7 @@ const bg11 = `url(${new URL('./assets/image/bg-11.jpg', import.meta.url).href})`
 const bg15 = `url(${new URL('./assets/image/bg-15.jpg', import.meta.url).href})`;
 const bg16 = `url(${new URL('./assets/image/bg-16.jpg', import.meta.url).href})`;
 const bg17 = `url(${new URL('./assets/image/bg-17.jpg', import.meta.url).href})`;
+const bg18 = `url(${new URL('./assets/image/bg-18.jpg', import.meta.url).href})`;
 const bgkarta = `url(${new URL('./assets/image/karta.png', import.meta.url).href})`; 
 
 const no1 = ref('');
@@ -303,7 +305,20 @@ const { nextSlide, backSlide } = arrowSlides();
         </div>
 
         <div class="scene scene-15 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg17, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 36">
-            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">Sad već i gnomovi malo engleski jezik znaju, pa će ga početi govoriti i u svome kraju. Patuljak je već put kući krenuo i jedva čekao priliku za iduću posjetu. <br/>
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">Sad već i gnomovi malo engleski jezik znaju, pa će ga početi govoriti i u svome kraju. Patuljak je već put kući krenuo i jedva čekao priliku za iduću posjetu. 
+            </span> </div>
+            </div> 
+            
+            <button class="btn next-btn absolute" v-if="no8?.toLowerCase() === 'spavati'"  @click="nextSlide">
+                <img src="/src/assets/image/arrow.svg" />
+            </button>
+            <button class="btn back-btn absolute" @click="backSlide">
+                <img src="/src/assets/image/arrow-prev.svg" />
+            </button>    
+        </div>
+
+        <div class="scene scene-16 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg18, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 35">
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay"> 
             Drago mu je da je i tebe upoznao te će te ponovno pozvati kada će u novu pustolovinu krenuti. S tobom je svaka pustolovina lakša i veselija!
             </span> </div>
             </div> 
@@ -316,7 +331,7 @@ const { nextSlide, backSlide } = arrowSlides();
             </button>    
         </div>
 
-        <div class="scene scene-16 font-size absolute hidden opacity uppercase" :style="{ backgroundImage: bg1, backgroundSize: 'cover', backgroundPosition: 'left' }" style="z-index: 32">
+        <div class="scene scene-17 font-size absolute hidden opacity uppercase" :style="{ backgroundImage: bg1, backgroundSize: 'cover', backgroundPosition: 'left' }" style="z-index: 34">
             <div class="relative z-2 wrapper-v4 text-black vertical-alignment"> 
                 <h2 class="text-center block mb-6">Kraj!</h2> 
                 <a href="https://price-pitalice.com.hr/prica/gnomovi-uce-strani-jezik/" class="btn btn-submit block text-center mt-20 btn-custom">Ponovi priču</a>
