@@ -217,7 +217,7 @@
     bottom: 8vh;
 }
 .text-ovelay {
-    background: rgb(50 54 109 / 50%);
+    background: rgb(0 0 0 / 40%);
     color: white;
     padding: 3px 5px;
     display: inline;
@@ -225,11 +225,53 @@
     -webkit-box-decoration-break: clone;
 }
 .text-bg {
-    background: rgb(50 54 109 / 50%); 
+    background: rgb(0 0 0 / 40%);
 }
 .mx-auto {
     margin: 0 auto;
 }
 .z-index-auto {
     z-index: auto;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.justify-items-center {
+    justify-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.btn-custom {
+    font-size: 18px;
+    max-width: 480px;
+    margin: 0 auto 20px;
+}
+.vertical-alignment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100vh;
+    margin: 0 auto;
+}
+.share-icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.share-icon-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.share-icon-button svg {
+    display: block;
+}
+.gap-4 {
+    gap: 1rem;
 }
