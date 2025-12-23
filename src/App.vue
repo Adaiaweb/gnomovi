@@ -98,7 +98,8 @@ const { nextSlide, backSlide } = arrowSlides();
                 <h1 class="ff-v1 mb-6 font-thin">Gnomovi uče strani jezik</h1> 
                 <button class="btn-submit next-btn" @click="nextSlide">
                     Kreni s pričom
-                </button>
+                </button>                
+                <a href="https://price-pitalice.com.hr/" class="btn btn-submit block mt-10 w-fit text-center font-size-v4 mt-20 mx-auto">Povratak na početnu stranicu</a>
             </div>
         </div>
 
@@ -206,41 +207,43 @@ const { nextSlide, backSlide } = arrowSlides();
         <div class="scene scene-10 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg9, backgroundSize: 'cover', backgroundPosition: '90% center' }" style="z-index: 41">
             <div class="wrapper-v1 relative">
                 <div class="blur"><span class="text-ovelay">{{no3}} je i gnomovima hrana najdraža. Još ih zanima, kako se na engleskom kaže:<br /></span></div>
-                <span class="text-bg">
-                    <input type="text" name="no-4" placeholder="Jabuka" v-model="no4" class="input-line font-size font-size--v1" @input="handleInput($event, 'no4')" />
-                    <span class="validation-width"> 
-                        <span v-if="no4 && no4 !== ''" :class="['validation', no4 === 'apple' ? 'correct' : 'incorrect']">
-                            {{ no4?.toLowerCase() === 'apple' ? '✔️' : '❌' }}
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <span class="text-bg">
+                        <input type="text" name="no-4" placeholder="Jabuka" v-model="no4" class="input-line font-size font-size--v1" @input="handleInput($event, 'no4')" />
+                        <span class="validation-width"> 
+                            <span v-if="no4 && no4 !== ''" :class="['validation', no4 === 'apple' ? 'correct' : 'incorrect']">
+                                {{ no4?.toLowerCase() === 'apple' ? '✔️' : '❌' }}
+                            </span>
                         </span>
                     </span>
-                </span>
 
-                <span class="text-bg">
-                    <input type="text" name="no-5" placeholder="Patka" v-model="no5" class="input-line font-size font-size--v1" @input="handleInput($event, 'no5')" />
-                    <span class="validation-width"> 
-                        <span v-if="no5 && no5 !== ''" :class="['validation', no5 === 'duck' ? 'correct' : 'incorrect']">
-                            {{ no5?.toLowerCase() === 'duck' ? '✔️' : '❌' }}
+                    <span class="text-bg">
+                        <input type="text" name="no-5" placeholder="Patka" v-model="no5" class="input-line font-size font-size--v1" @input="handleInput($event, 'no5')" />
+                        <span class="validation-width"> 
+                            <span v-if="no5 && no5 !== ''" :class="['validation', no5 === 'duck' ? 'correct' : 'incorrect']">
+                                {{ no5?.toLowerCase() === 'duck' ? '✔️' : '❌' }}
+                            </span>
                         </span>
                     </span>
-                </span>
 
-                <span class="text-bg">
-                    <input type="text" name="no-6" placeholder="Jaja" v-model="no6" class="input-line font-size font-size--v1" @input="handleInput($event, 'no6')" />
-                    <span class="validation-width"> 
-                        <span v-if="no6 && no6 !== ''" :class="['validation', no6 === 'eggs' ? 'correct' : 'incorrect']">
-                            {{ no6?.toLowerCase() === 'eggs' ? '✔️' : '❌' }}
+                    <span class="text-bg">
+                        <input type="text" name="no-6" placeholder="Jaja" v-model="no6" class="input-line font-size font-size--v1" @input="handleInput($event, 'no6')" />
+                        <span class="validation-width"> 
+                            <span v-if="no6 && no6 !== ''" :class="['validation', no6 === 'eggs' ? 'correct' : 'incorrect']">
+                                {{ no6?.toLowerCase() === 'eggs' ? '✔️' : '❌' }}
+                            </span>
                         </span>
                     </span>
-                </span>
 
-                <span class="text-bg">
-                    <input type="text" name="no-7" placeholder="Narandža" v-model="no7" class="input-line font-size font-size--v1" @input="handleInput($event, 'no7')" />
-                    <span class="validation-width"> 
-                        <span v-if="no7 && no7 !== ''" :class="['validation', no7 === 'orange' ? 'correct' : 'incorrect']">
-                            {{ no7?.toLowerCase() === 'orange' ? '✔️' : '❌' }}
+                    <span class="text-bg">
+                        <input type="text" name="no-7" placeholder="Narandža" v-model="no7" class="input-line font-size font-size--v1" @input="handleInput($event, 'no7')" />
+                        <span class="validation-width"> 
+                            <span v-if="no7 && no7 !== ''" :class="['validation', no7 === 'orange' ? 'correct' : 'incorrect']">
+                                {{ no7?.toLowerCase() === 'orange' ? '✔️' : '❌' }}
+                            </span>
                         </span>
-                    </span>
-                </span> 
+                    </span> 
+                </div>
             </div> 
             <button class="btn next-btn absolute" v-if="no4?.toLowerCase() === 'apple' && no5?.toLowerCase() === 'duck' && no6?.toLowerCase() === 'eggs' && no7?.toLowerCase() === 'orange'" @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
