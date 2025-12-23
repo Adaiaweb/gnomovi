@@ -256,13 +256,13 @@ const { nextSlide, backSlide } = arrowSlides();
         <div class="scene scene-11 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg10, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 40">
             <div class="wrapper-v1 relative float-right"><div class="blur"><span class="text-ovelay">Zahvaljujući tvojoj pomoći, patuljak više nema problema i nakon što je napunio svoj trbuščić, želi naći mjesto da malo zadrijema. Ispod drveta bolje ne, da mu jabuka na glavu ne padne. Možda da zamoli gnomove za najbolje mjesto za oči umorne. Ponovno treba pomoć tvoju za riječ Sleep na patuljčevu govoru.<br /></span></div>
                 <input type="text" name="no-8" v-model="no8" class="input-line font-size text-bg" placeholder="Sleep na hrvatskom?" @input="handleInput($event, 'no8')" />
-                <span class="validation-width"> 
-                    <span v-if="no8 && no8 !== ''" :class="['validation', no8 === 'spavati' ? 'correct' : 'incorrect']">
-                        {{ no8?.toLowerCase() === 'spavati' ? '✔️' : '❌' }}
+                <span class="validation-width">
+                    <span v-if="no8 && no8 !== ''" :class="['validation', (no8?.toLowerCase() === 'spavati' || no8?.toLowerCase() === 'spavanje') ? 'correct' : 'incorrect']">
+                        {{ (no8?.toLowerCase() === 'spavati' || no8?.toLowerCase() === 'spavanje') ? '✔️' : '❌' }}
                     </span>
                 </span>
-            </div> 
-            <button class="btn next-btn absolute" v-if="no8?.toLowerCase() === 'spavati'"  @click="nextSlide">
+            </div>
+            <button class="btn next-btn absolute" v-if="no8?.toLowerCase() === 'spavati' || no8?.toLowerCase() === 'spavanje'"  @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
             </button>
             <button class="btn back-btn absolute" @click="backSlide">
@@ -312,21 +312,21 @@ const { nextSlide, backSlide } = arrowSlides();
             </span> </div>
             </div> 
             
-            <button class="btn next-btn absolute" v-if="no8?.toLowerCase() === 'spavati'"  @click="nextSlide">
+            <button class="btn next-btn absolute" v-if="no8?.toLowerCase() === 'spavati' || no8?.toLowerCase() === 'spavanje'"  @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
             </button>
             <button class="btn back-btn absolute" @click="backSlide">
                 <img src="/src/assets/image/arrow-prev.svg" />
-            </button>    
+            </button>
         </div>
 
         <div class="scene scene-16 ff-v2 font-size absolute hidden" :style="{ backgroundImage: bg18, backgroundSize: 'cover', backgroundPosition: 'center' }" style="z-index: 35">
-            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay"> 
+            <div class="wrapper-v1 relative"><div class="blur"><span class="text-ovelay">
             Drago mu je da je i tebe upoznao te će te ponovno pozvati kada će u novu pustolovinu krenuti. S tobom je svaka pustolovina lakša i veselija!
             </span> </div>
-            </div> 
-            
-            <button class="btn next-btn absolute" v-if="no8?.toLowerCase() === 'spavati'"  @click="nextSlide">
+            </div>
+
+            <button class="btn next-btn absolute" v-if="no8?.toLowerCase() === 'spavati' || no8?.toLowerCase() === 'spavanje'"  @click="nextSlide">
                 <img src="/src/assets/image/arrow.svg" />
             </button>
             <button class="btn back-btn absolute" @click="backSlide">
