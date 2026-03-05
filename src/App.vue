@@ -71,6 +71,8 @@ let inputTimeout = null;
 
 const handleInput = (event, model) => {
   const value = event.target.value;
+  let isCorrect = false;
+
   if (model === 'no1') {
     no1.value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
 
@@ -80,14 +82,53 @@ const handleInput = (event, model) => {
     }, 5000);
   } else if (model === 'no3') {
     no3.value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
-  } else if (/^\d*$/.test(value)) {
-    if (model === 'no2') no2.value = value;
-    if (model === 'no4') no4.value = value;
-    if (model === 'no5') no5.value = value;
-    if (model === 'no6') no6.value = value;
-    if (model === 'no7') no7.value = value;
-    if (model === 'no8') no8.value = value;
-    if (model === 'no9') no9.value = value;
+    if (no3.value !== '') {
+      event.target.blur();
+    }
+  } else if (model === 'no2') {
+    no2.value = value;
+    if (no2.value.toLowerCase() === 'hrana') {
+      isCorrect = true;
+    }
+  } else if (model === 'no4') {
+    if (/^\d*$/.test(value)) no4.value = value;
+    if (no4.value.toLowerCase() === 'apple') {
+      isCorrect = true;
+    }
+  } else if (model === 'no5') {
+    if (/^\d*$/.test(value)) no5.value = value;
+    if (no5.value.toLowerCase() === 'duck') {
+      isCorrect = true;
+    }
+  } else if (model === 'no6') {
+    if (/^\d*$/.test(value)) no6.value = value;
+    if (no6.value.toLowerCase() === 'eggs') {
+      isCorrect = true;
+    }
+  } else if (model === 'no7') {
+    if (/^\d*$/.test(value)) no7.value = value;
+    if (no7.value.toLowerCase() === 'orange') {
+      isCorrect = true;
+    }
+  } else if (model === 'no8') {
+    if (/^\d*$/.test(value)) no8.value = value;
+    if (no8.value.toLowerCase() === 'spavati' || no8.value.toLowerCase() === 'spavanje') {
+      isCorrect = true;
+    }
+  } else if (model === 'no9') {
+    if (/^\d*$/.test(value)) no9.value = value;
+    if (no9.value.toLowerCase() === 'roof') {
+      isCorrect = true;
+    }
+  } else if (model === 'no10') {
+    no10.value = value;
+    if (no10.value.toLowerCase() === 'hvala') {
+      isCorrect = true;
+    }
+  }
+
+  if (isCorrect) {
+    event.target.blur();
   }
 };
 
