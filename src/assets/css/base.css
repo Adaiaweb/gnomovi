@@ -68,10 +68,14 @@ body {
 .font-thin {
    font-weight: 100; 
 }
-.input-line {
-    background-color: transparent;
+.input-line { 
+    padding: 10px;
     border: none;
     border-bottom: 2px solid #000;
+    color: white;
+    backdrop-filter: blur(2px);    
+    text-shadow: 2px 1px 9px rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .back-btn {
     left: 0;

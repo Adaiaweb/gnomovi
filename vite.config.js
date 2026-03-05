@@ -15,6 +15,6 @@ export default defineConfig({
     },
   },
   base: process.env.NODE_ENV === 'production' 
-    ? '/prica/gnomovi-uce-strani-jezik/'  // Set for production
+    ? '/prica/gnomovi-uce-strani-jezik/play/'  // Set for production
     : '/',  // Set for development 
 });
