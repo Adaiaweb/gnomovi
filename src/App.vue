@@ -67,10 +67,17 @@ const no8 = ref('');
 const no9 = ref('');
 const no10 = ref('');
 
+let inputTimeout = null;
+
 const handleInput = (event, model) => {
   const value = event.target.value;
   if (model === 'no1') {
     no1.value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+
+    if (inputTimeout) clearTimeout(inputTimeout);
+    inputTimeout = setTimeout(() => {
+      event.target.blur();
+    }, 5000);
   } else if (model === 'no3') {
     no3.value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
   } else if (/^\d*$/.test(value)) {
