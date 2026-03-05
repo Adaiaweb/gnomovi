@@ -68,6 +68,7 @@ const no9 = ref('');
 const no10 = ref('');
 
 let inputTimeout = null;
+let inputTimeoutNo3 = null;
 
 const handleInput = (event, model) => {
   const value = event.target.value;
@@ -82,9 +83,11 @@ const handleInput = (event, model) => {
     }, 5000);
   } else if (model === 'no3') {
     no3.value = value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
-    if (no3.value !== '') {
+
+    if (inputTimeoutNo3) clearTimeout(inputTimeoutNo3);
+    inputTimeoutNo3 = setTimeout(() => {
       event.target.blur();
-    }
+    }, 5000);
   } else if (model === 'no2') {
     no2.value = value;
     if (no2.value.toLowerCase() === 'hrana') {
